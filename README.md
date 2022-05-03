@@ -25,7 +25,7 @@ The PyChain app also features a Block Inspector in the web interface. This drop 
 The PyChain app is written in Python 3.10.1 using Microsoft Visual Studio. It is compatible with Mac and PC OS.
 The tool uses the Pandas libraries to manage data.
 The web interface is rendered using Streamlit.
-Hashing and encryption in the ledger come from the Python hashlib module.
+Hashing and encryption capabilities come from the Python hashlib module.
 
 ---
 
