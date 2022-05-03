@@ -4,7 +4,7 @@ A blockchain-based ledger system accessible through a user-friendly web interfac
 
 Initially, the PyChain app creates a class for Records, whose attributes include Sender, Receiver, and Amount. The user inputs values for each of these attributes through the Streamlit UI. 
 
-![Enter Transaction Details](https://user-images.githubusercontent.com/69730757/166508926-72da8504-2457-426d-a6b6-44d557031587.png)
+![Enter Transaction Details](https://user-images.githubusercontent.com/69730757/166513349-2aa3f010-1258-4446-860b-78cd47e0aebb.png)
 
 The PyChain app uses a proof of work consensus protocol to validate blocks on the chain. Next, the app creates a Block class with attributes for Creator ID, Previous Hash, Timestamp, and Nonce. Each entry in the blockchain ledger will include information for all of these attributes.
 
