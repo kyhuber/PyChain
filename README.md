@@ -1,85 +1,43 @@
 # Pychain
 
-Creating a machine learning trading bot to inform decisions about returns based on different trading strategies.
+A blockchain-based ledger system accessible through a user-friendly web interface.
 
-First, the ML Trading Bot establishes a baseline performance from stock performance data from a csv file. Moving average values are calculated based on predefined inputs, creating trading signals. Next, the bot tunes the baseline trading algorithm using the support vector machine learning method. The app plots actual returns and strategy returns based on the trading signals.
+Initially, the PyChain app creates a class for Records, whose attributes include Sender, Receiver, and Amount. The user inputs values for each of these attributes through the Streamlit UI. 
 
-Finally, the app reconsiders stock performance data using the LogisticRegression ML model.
+![Enter Transaction Details](https://user-images.githubusercontent.com/69730757/166508926-72da8504-2457-426d-a6b6-44d557031587.png)
 
-The ML Trading Bot creates value for users, namely investors, by creating performance predictions. The bot can be tuned using any ML model and tested to view outcomes based on historical data.
+The PyChain app uses a proof of work consensus protocol to validate blocks on the chain. Next, the app creates a Block class with attributes for Creator ID, Previous Hash, Timestamp, and Nonce. Each entry in the blockchain ledger will include information for all of these attributes.
 
-The app is written in such a manner that it can take in data from any equity and is still just as useful.
+![PyChain Ledger](https://user-images.githubusercontent.com/69730757/166509806-b2c65c47-18bd-4935-999c-3677fc7b54a4.png)
+
+As part of the proof of work protocol, the app allows the user to select their desired level of block difficulty. The scale ranges from 1 to 5, representing the number of zeroes required at the beginning of each hash to validate the block. When the difficulty increases, PyChain takes longer to validate the block and returns larger nonce values.
+
+![Block Difficulty](https://user-images.githubusercontent.com/69730757/166511165-cc07560c-24fc-4752-ab88-454b916692d8.png)
+
+The PyChain app also features a Block Inspector in the web interface. This drop down menu allows the user to select a specific block and view associated attributes. Just below the ledger, the user can click a button to Validate Chain. This process analyzes all of the blocks on the chain to ensure all of them are linked to the previous block's hash.
+
 
 ---
 
 ## Technologies
 
-The ML Trading Bot is written in Python 3.10.1 using Jupyter Lab. It is compatible with Mac and PC OS.
-The tool uses the Pandas libraries to collect, prepare, and analyze the data.
-Data visualization plots are rendered using hvplot.
-Machine Learning libraries come from SK Learn
-
-This app references raw data that is provided in a CSV file.
+The PyChain app is written in Python 3.10.1 using Microsoft Visual Studio. It is compatible with Mac and PC OS.
+The tool uses the Pandas libraries to manage data.
+The web interface is rendered using Streamlit.
+Hashing and encryption in the ledger come from the Python hashlib module.
 
 ---
 
 ## Installation Guide
 
-This app can be run in Gitbash or Terminal. The app and supporting files are located in the below Github repository:
-https://github.com/kyhuber/ML_Trading_Bot/
-
----
-
-## Findings
-
-Long SMA = 100, Short SMA = 4, Training Window = 3 months
-
-These parameters establish a baseline for performance data. We can see that the strategy returns slightly exceed the actual returns using the SVC classifier model. The strategy returns exhibit similar volatility and trend lines.
-
-![image](https://user-images.githubusercontent.com/69730757/162499783-737300bc-67bb-44ac-ad67-700d4c61c824.png)
-
-
-### What impact resulted from increasing or decreasing the training window?
-
-Long SMA = 100, Short SMA = 4, Training Window = 24 months
-
-By increasing the training window, the strategy returns improves significantly.
-
-![image](https://user-images.githubusercontent.com/69730757/162492502-5d2d0f59-af50-40a4-ad3a-422815843c6c.png)
-
-
-### What impact resulted from increasing or decreasing either or both of the SMA windows?
-
-Long SMA = 30, Short SMA = 1, Training Window = 3 months
-
-By decreasing the long window to 30 and short to 1, we see good strategy returns but the trend line is more volatile.
-
-![image](https://user-images.githubusercontent.com/69730757/162493558-93493025-e552-4cd4-a519-c83e3deb5568.png)
-
-
-### Logistic Regression Model
-
-Long SMA = 100, Short SMA = 4, Training Window = 3 months
-
-The strategy returns and actual returns are more consistent using the logistic regression model, but they are not as favorable as the SVC model.
-
-![image](https://user-images.githubusercontent.com/69730757/162497814-4cf7a5ba-db44-4256-836f-8014fd1e2c1b.png)
-
-
-### Maximum Returns
-
-Long SMA = 100, Short SMA = 1, Training Window = 24 months
-
-By decreasing the short window, we see a sizable improvement of strategy returns in the SVC model. This combination of a longer long window, a shorter short window, and longer training window creates the best returns.
-
-![image](https://user-images.githubusercontent.com/69730757/162492824-ff710fb2-7fda-4c02-8598-924328911b58.png)
+This app can be run in any browser using Streamlit.
 
 ---
 
 ## Contributors
 
-The ML Trading Bot was written by Kyle Huber in April 2022.
+The PyChain app was written by Kyle Huber in May 2022.
 
 ---
 
-# ML_Trading_Bot
+# PyChain
