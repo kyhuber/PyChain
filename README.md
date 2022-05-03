@@ -1,4 +1,4 @@
-# Pychain
+# PyChain
 
 A blockchain-based ledger system accessible through a user-friendly web interface.
 
