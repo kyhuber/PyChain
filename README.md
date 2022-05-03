@@ -16,6 +16,7 @@ As part of the proof of work protocol, the app allows the user to select their d
 
 The PyChain app also features a Block Inspector in the web interface. This drop down menu allows the user to select a specific block and view associated attributes. Just below the ledger, the user can click a button to Validate Chain. This process analyzes all of the blocks on the chain to ensure all of them are linked to the previous block's hash.
 
+![Block Inspector](https://user-images.githubusercontent.com/69730757/166514023-1af1398a-7017-425b-8535-a3c1375fb6ac.png)
 
 ---
 
