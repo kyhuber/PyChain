@@ -23,7 +23,6 @@
 
 ################################################################################
 # Imports
-#from array import FloatTypeCode
 import streamlit as st
 from dataclasses import dataclass
 from typing import Any, List
@@ -139,14 +138,10 @@ class PyChain:
 ################################################################################
 # Streamlit Code
 
-# Adds the cache decorator for Streamlit
-
-
 @st.cache(allow_output_mutation=True)
 def setup():
     print("Initializing Chain")
     return PyChain([Block("Genesis", 0)])
-
 
 st.markdown("# PyChain")
 st.markdown("## Store a Transaction Record in the PyChain")
