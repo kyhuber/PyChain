@@ -8,8 +8,6 @@ Initially, the PyChain app creates a class for Records, whose attributes include
 
 The PyChain app uses a proof of work consensus protocol to validate blocks on the chain. Next, the app creates a Block class with attributes for Creator ID, Previous Hash, Timestamp, and Nonce. Each entry in the blockchain ledger will include information for all of these attributes.
 
-![PyChain Ledger](https://user-images.githubusercontent.com/69730757/166509806-b2c65c47-18bd-4935-999c-3677fc7b54a4.png)
-
 As part of the proof of work protocol, the app allows the user to select their desired level of block difficulty. The scale ranges from 1 to 5, representing the number of zeroes required at the beginning of each hash to validate the block. When the difficulty increases, PyChain takes longer to validate the block and returns larger nonce values.
 
 ![Validate Chain](https://user-images.githubusercontent.com/69730757/167019128-f3616088-029a-464c-9ee2-f594d1b38cec.png)
