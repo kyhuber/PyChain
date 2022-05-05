@@ -12,7 +12,7 @@ The PyChain app uses a proof of work consensus protocol to validate blocks on th
 
 As part of the proof of work protocol, the app allows the user to select their desired level of block difficulty. The scale ranges from 1 to 5, representing the number of zeroes required at the beginning of each hash to validate the block. When the difficulty increases, PyChain takes longer to validate the block and returns larger nonce values.
 
-![Block Difficulty](https://user-images.githubusercontent.com/69730757/166511165-cc07560c-24fc-4752-ab88-454b916692d8.png)
+![Validate Chain](https://user-images.githubusercontent.com/69730757/167019128-f3616088-029a-464c-9ee2-f594d1b38cec.png)
 
 The PyChain app also features a Block Inspector in the web interface. This drop down menu allows the user to select a specific block and view associated attributes. Just below the ledger, the user can click a button to Validate Chain. This process analyzes all of the blocks on the chain to ensure all of them are linked to the previous block's hash.
 
